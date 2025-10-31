@@ -18,3 +18,7 @@ starwars %>% slice_max(mass)
 starwars %>% ggplot(aes(x = mass, fill = gender))+
   geom_density(alpha = 0.8) +
   scale_x_log10()
+
+starwars %>%
+  ggplot(aes(y = homeworld, fill = species)) +
+  geom_bar()
